@@ -12,15 +12,9 @@ public class Exception02{
         int num2;
         int result;
 
-        try{
-            num1 = keyboardInput.nextInt();
-            num2 = keyboardInput.nextInt();
-            result = num1 / num2;
-            System.out.println("Division Ergebnis ist: " + result);
-        }catch(Exception e) {
-            System.out.println("falsche Eingabe! " + e);
-        }finally {
-            keyboardInput.close();
-        }
+        num1 = keyboardInput.nextInt();
+        num2 = keyboardInput.nextInt();
+        result = num1 / num2;
+        System.out.println("Division Ergebnis ist: " + result);
     }
 }
