@@ -11,9 +11,7 @@ public class Exception04 {
         int i = 0;
 
         try (BufferedReader br = new BufferedReader(new BufferedReader(new InputStreamReader(System.in)))) {
-//            show error with this:
-//            while ((line = br.readLine()) != null && i < 2) {
-            while (i < 2 && (line = br.readLine()) != null) {
+            while ((line = br.readLine()) != null && i < 2) {
                 numbers[i] = Integer.parseInt(line);
                 i++;
                 br.close();
