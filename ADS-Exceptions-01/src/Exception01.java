@@ -12,14 +12,14 @@ public class Exception01 {
         try{
             System.out.println(pets[3]);
         }catch (Exception e){
-            System.out.println(e);
+            System.out.println("Fehlerfallbehandlung ... "+ e);
         }
         //java.lang.NumberFormatException: For input string: "123c"
         try{
             String text = "123c";
             int i = Integer.parseInt(text);
         }catch (Exception e){
-            System.out.println(e);
+            System.out.println("Fehlerfallbehandlung ... "+ e);
         }
 
         //java.lang.NullPointerException: Cannot invoke "java.util.ArrayList.get(int)" because "<local2>" is null
@@ -27,7 +27,7 @@ public class Exception01 {
             ArrayList<String> list = null;
             list.get(0);
         }catch(Exception e){
-            System.out.println(e);
+            System.out.println("Fehlerfallbehandlung ... "+ e);
         }
 
         // an sich sind Exceptions auch eine gute Sache -> frühe Fehlererkennung
