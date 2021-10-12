@@ -1,3 +1,4 @@
 .idea/
 ADS-Exceptions.iml
 .DS_STORE
+*.class
